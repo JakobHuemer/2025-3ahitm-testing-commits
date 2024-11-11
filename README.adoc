@@ -1,0 +1,34 @@
+
+= Git und YouTrack Integration
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+
+== Schritte
+
+=== 1. Datei erstellen und hinzufügen
+[source,bash]
+----
+cd texts/
+touch <nachname>.txt
+git add <nachname>.txt
+----
+
+=== 2. Änderungen committen
+Die *YouTrack ID* befindet sich in der oberen linken Ecke der Karte.
+Jeder hat seine eigene ID bei seiner Karte.
+
+image::youtrack_id.png[]
+
+IMPORTANT: Bei "In Progress" Groß- und Kleinschreibung beachten!
+
+YouTrack ID eintragen
+[source,bash]
+----
+git commit -m "docs: add <nachname>.txt #comte-<id> In Progress"
+----
+
+=== 3. Änderungen pushen
+[source,bash]
+----
+git push origin main
+----
