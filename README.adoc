@@ -18,6 +18,8 @@ Bevor das committen mit YouTrack geht muss erst folgendes gemacht werden
 
 === 1. VSC Im Project hinzufügen
 
+YouTrack Projekt: https://vm81.htl-leonding.ac.at/projects/e9eef200-e89e-4b9b-8ae2-16ebc72fb12e
+
 image:youtrack_vsc.png[]
 
 Bei Generate Token sind alle Kästchen schon voreingestellt.
