@@ -12,15 +12,50 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+== Setup
+
+Bevor das committen mit YouTrack geht muss erst folgendes gemacht werden
+
+=== 1. VSC Im Project hinzufügen
+
+image:youtrack_vsc.png[]
+
+Bei Generate Token sind alle Kästchen schon voreingestellt.
+Können so gelassen werden.
+
+image:youtrack_vsc_github.png[]
+
+
+=== 2. GitHub Username bei YouTrack einfügen
+
+* Auf Profile klicken
+
+image:youtrack_profile.png[]
+
+* GitHub Usernamen einfügen
+
+image:youtrack_github_username.png[]
+
+IMPORTANT: Speichern nicht vergessen!
+
 == Schritte
 
-=== 1. Datei erstellen und hinzufügen
+=== 1. Clonen, Datei erstellen und hinzufügen
 [source,bash]
 ----
+
+# mit https
+git clone https://github.com/JakobHuemer/2025-3ahitm-testing-commits.git
+
+# mit ssh
+git clone git@github.com:JakobHuemer/2025-3ahitm-testing-commits.git
+
 cd texts/
 touch <nachname>.txt
 git add <nachname>.txt
 ----
+
+IMPORTANT: Dateien werden immer *KLEINGESCHRIEBEN*.
 
 === 2. Änderungen committen
 Die *YouTrack ID* befindet sich in der oberen linken Ecke der Karte.
@@ -41,3 +76,8 @@ git commit -m "docs: add <nachname>.txt #comte-<id> In Progress"
 ----
 git push origin main
 ----
+
+=== 4. Bei Fehlern!
+
+* vom 1. Punkt alles durch checken.
+* text in <nachname>.txt speichern und erneut committen und pushen zum testen
